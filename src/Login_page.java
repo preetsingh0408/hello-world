@@ -160,7 +160,7 @@ public class Login_page extends javax.swing.JFrame {
             try
             {
                 Class.forName("com.mysql.jdbc.Driver");
-                conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/librarymanagement","root","preet123");
+                conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/librarymanagement","root","*****");
                 String sql="Select password from account where username='"+idd+"'";
                 pst=conn.prepareStatement(sql);
                 rs=pst.executeQuery(sql);                
